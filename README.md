@@ -181,11 +181,11 @@ winget install --id Gyan.FFmpeg -e
 联想拯救者系列的控制工具，用于调节性能模式、风扇、键盘灯效、电池充电阈值等，比官方 Vantage 轻量且无广告。
 
 ```powershell
-winget install --id LenovoLegionToolkit-Team.LenovoLegionToolkit -e
+winget install --id BartoszCichecki.LenovoLegionToolkit -e
 ```
 
 - 开源仓库：https://github.com/LenovoLegionToolkit-Team/LenovoLegionToolkit
-- 说明：仓库已从 `BartoszCichecki` 迁移至 `LenovoLegionToolkit-Team`，winget 包 ID 也同步变更，使用旧 ID 会安装失败。
+- 说明：项目源码仓库已由 `BartoszCichecki` 迁移至 `LenovoLegionToolkit-Team`，但 **winget 包 ID 仍是 `BartoszCichecki.LenovoLegionToolkit`**（截至 2.26.1，2025-05-10）。请勿写成 `LenovoLegionToolkit-Team.*`，该 ID 不存在，会报「找不到与输入条件匹配的已安装程序包」。
 
 ---
 
@@ -205,7 +205,7 @@ $apps = @(
   "astral-sh.uv",
   "OBSProject.OBSStudio",
   "Gyan.FFmpeg",
-  "LenovoLegionToolkit-Team.LenovoLegionToolkit"
+  "BartoszCichecki.LenovoLegionToolkit"
 )
 
 foreach ($app in $apps) {
